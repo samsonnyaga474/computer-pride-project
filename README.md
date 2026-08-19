@@ -57,7 +57,7 @@ The frontend is a static Bootstrap site. PHP scripts handle form submissions and
 | Courses | `courses.html` | Short courses with filters (Programming, Networking, Cyber Security, Data & AI, Cloud, Design, Digital Skills) |
 | Services | `services.html` | Certifications, business solutions, IT infrastructure |
 | Corporate | `corporate.html` | Corporate training and technology services for organisations |
-| Resources | `Resources.html` | Photo gallery and articles hub |
+| resources | `resources.html` | Photo gallery and articles hub |
 | Articles | `articles.html` | Full career and technology articles |
 | Contact | `contact-us.html` | Contact form, FAQ, social links, location |
 
@@ -109,7 +109,7 @@ computer-pride-website/
 ├── courses.html
 ├── services.html
 ├── corporate.html
-├── Resources.html
+├── resources.html
 ├── articles.html
 ├── contact-us.html
 ├── style.css
