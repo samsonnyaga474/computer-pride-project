@@ -1,0 +1,35 @@
+# Environment / secrets
+.env
+.env.*
+*.env
+config.local.php
+secrets.php
+
+# XAMPP / local server files
+*.log
+error_log
+access_log
+phpmyadmin/
+mysql/data/
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.suo
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.bak
+*.orig
+~$*
+
+# Node modules
+node_modules/
