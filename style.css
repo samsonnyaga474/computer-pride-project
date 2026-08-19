@@ -1,6 +1,4 @@
-/* =========================
-   BASE STYLES
-========================= */
+/* base styles */
 * {
   box-sizing: border-box;
 }
@@ -19,9 +17,7 @@ img {
   display: block;
 }
 
-/* =========================
-   NAVBAR
-========================= */
+/* navbar */
 .navbar {
   background: rgba(0, 0, 0, 0.92);
   backdrop-filter: blur(12px);
@@ -54,9 +50,7 @@ img {
   font-weight: 600;
 }
 
-/* =========================
-   HERO SECTION
-========================= */
+/* hero section */
 .hero {
   min-height: 100vh;
   position: relative;
@@ -141,7 +135,7 @@ img {
   font-weight: 600;
 }
 
-/* Floating animation for hero content */
+/* floating animation for hero content */
 .hero-float {
   animation: floatUpDown 3.2s ease-in-out infinite;
 }
@@ -174,9 +168,7 @@ img {
   }
 }
 
-/* =========================
-   COMMON SECTION STYLES
-========================= */
+/* common section styles */
 .section-badge {
   display: inline-block;
   padding: 6px 16px;
@@ -201,9 +193,7 @@ img {
   line-height: 1.7;
 }
 
-/* =========================
-   STATS SECTION
-========================= */
+/* stats section */
 .stats-section {
   background: #0f0f0f;
   padding: 40px 0;
@@ -246,9 +236,7 @@ img {
   font-size: 0.9rem;
 }
 
-/* =========================
-   WHY COMPUTER PRIDE
-========================= */
+/* why computer pride */
 .why-section {
   background: #0f0f0f;
   padding: 90px 0;
@@ -350,9 +338,7 @@ img {
   right: 22px;
 }
 
-/* =========================
-   COURSES SLIDER
-========================= */
+/* courses slider */
 .courses-section {
   background: #0f0f0f;
   padding: 90px 0;
@@ -430,9 +416,7 @@ img {
   border-radius: 25px;
 }
 
-/* =========================
-   SERVICES
-========================= */
+/* services */
 .services-section {
   background: #0f0f0f;
   padding: 90px 0;
@@ -472,9 +456,7 @@ img {
   margin-bottom: 18px;
 }
 
-/* =========================
-   CORPORATE
-========================= */
+/* corporate */
 .corporate-section {
   background: #0f0f0f;
   padding: 90px 0;
@@ -524,9 +506,7 @@ img {
   margin: 0;
 }
 
-/* =========================
-   PARTNERS
-========================= */
+/* partners */
 .partners-section {
   background: #0f0f0f;
   padding: 90px 0;
@@ -572,9 +552,7 @@ img {
   color: #dddddd;
 }
 
-/* =========================
-   RESOURCES
-========================= */
+/* resources */
 .resources-section {
   background: #0f0f0f;
   padding: 90px 0;
@@ -617,9 +595,7 @@ img {
   font-weight: 500;
 }
 
-/* =========================
-   CTA SECTION
-========================= */
+/* cta section */
 .cta-section {
   background: #0f0f0f;
   padding: 90px 0;
@@ -645,9 +621,7 @@ img {
   line-height: 1.7;
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* footer */
 .site-footer {
   background: #0a0a0a;
   padding: 60px 0 30px;
@@ -720,9 +694,7 @@ img {
   border-color: #0d6efd;
 }
 
-/* =========================
-   COURSES PAGE
-========================= */
+/* courses page */
 .page-hero {
   background: #0f0f0f;
   padding: 140px 0 60px;
@@ -919,9 +891,7 @@ img {
   display: block;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+/* responsive */
 @media (max-width: 991px) {
   .hero-content {
     padding: 0 18px;
@@ -962,9 +932,7 @@ img {
   }
 }
 
-/* =========================
-   ABOUT PAGE - TEAM
-========================= */
+/* about page - team */
 
 .team-section {
   background-color: #111111;
@@ -1024,9 +992,7 @@ img {
   line-height: 1.6;
 }
 
-/* =========================
-   ABOUT PAGE - LOCATIONS
-========================= */
+/* about page - locations */
 
 .locations-section {
   background-color: #0f0f0f;
@@ -1103,10 +1069,7 @@ img {
   margin-right: 7px;
 }
 
-/* =========================
-   ABOUT INTRO / STORY
-   OLD PROJECT STYLE
-========================= */
+/* about intro */
 
 .max-w-700 {
   max-width: 700px;
@@ -1187,10 +1150,7 @@ img {
   margin-top: 20px;
 }
 
-/* =========================
-   VALUES
-   OLD PROJECT STYLE
-========================= */
+/* values */
 
 .values-section {
   background-color: #111111;
@@ -1228,9 +1188,7 @@ img {
   line-height: 1.8;
 }
 
-/* =========================================================
-   OUR JOURNEY
-========================================================= */
+/* our journey */
 
 .journey-section {
   position: relative;
@@ -1239,7 +1197,7 @@ img {
   background: #000;
 }
 
-/* Background glow */
+/* background glow */
 
 .journey-section::before {
   content: "";
@@ -1253,7 +1211,7 @@ img {
   pointer-events: none;
 }
 
-/* Heading */
+/* heading */
 
 .journey-heading {
   position: relative;
@@ -1292,9 +1250,7 @@ img {
   line-height: 1.8;
 }
 
-/* =========================================================
-   OUR JOURNEY - SCROLL ANIMATION
-========================================================= */
+/* our journey - scroll animation */
 
 .journey-timeline {
   position: relative;
@@ -1302,7 +1258,7 @@ img {
   margin: auto;
 }
 
-/* Main timeline line */
+/* main timeline line */
 .journey-timeline::before {
   content: "";
   position: absolute;
@@ -1314,7 +1270,7 @@ img {
   background: rgba(0, 200, 255, 0.18);
 }
 
-/* Glowing animated progress line */
+/* glowing animated progress line */
 .journey-timeline::after {
   content: "";
   position: absolute;
@@ -1335,7 +1291,7 @@ img {
   height: 100%;
 }
 
-/* Timeline item */
+/* timeline item */
 .journey-item {
   position: relative;
   width: 50%;
@@ -1348,29 +1304,27 @@ img {
     transform 1s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-/* Left cards start further left */
+/* left cards start further left */
 .journey-item:nth-child(odd) {
   left: 0;
   text-align: right;
   transform: translateX(-70px);
 }
 
-/* Right cards start further right */
+/* right cards start further right */
 .journey-item:nth-child(even) {
   left: 50%;
   text-align: left;
   transform: translateX(70px);
 }
 
-/* Visible state */
+/* visible state */
 .journey-item.show {
   opacity: 1;
   transform: translateX(0);
 }
 
-/* =========================================================
-   YEAR
-========================================================= */
+/* year */
 
 .journey-year {
   position: absolute;
@@ -1401,9 +1355,7 @@ img {
   text-shadow: 0 0 25px rgba(0, 200, 255, 0.25);
 }
 
-/* =========================================================
-   GLOWING DOT
-========================================================= */
+/* glowing dot */
 
 .journey-dot {
   position: absolute;
@@ -1431,17 +1383,17 @@ img {
     transform 0.6s ease;
 }
 
-/* Left dot */
+/* left dot */
 .journey-item:nth-child(odd) .journey-dot {
   right: -9px;
 }
 
-/* Right dot */
+/* right dot */
 .journey-item:nth-child(even) .journey-dot {
   left: -9px;
 }
 
-/* Active glowing dot */
+/* active glowing dot */
 .journey-item.show .journey-dot {
   background: #00c8ff;
 
@@ -1472,9 +1424,7 @@ img {
   }
 }
 
-/* =========================================================
-   JOURNEY CARD
-========================================================= */
+/* journey card */
 
 .journey-card {
   position: relative;
@@ -1508,7 +1458,7 @@ img {
     0 0 25px rgba(0, 200, 255, 0.08);
 }
 
-/* Number */
+/* number */
 
 .journey-number {
   display: block;
@@ -1524,7 +1474,7 @@ img {
   letter-spacing: 2px;
 }
 
-/* Title */
+/* title */
 
 .journey-card h3 {
   margin: 0 0 12px;
@@ -1536,7 +1486,7 @@ img {
   font-weight: 700;
 }
 
-/* Text */
+/* text */
 
 .journey-card p {
   margin: 0;
@@ -1548,9 +1498,7 @@ img {
   line-height: 1.8;
 }
 
-/* =========================================================
-   MOBILE
-========================================================= */
+/* mobile */
 
 @media (max-width: 768px) {
   .journey-section {
@@ -1561,14 +1509,14 @@ img {
     margin-bottom: 60px;
   }
 
-  /* Move timeline to the left */
+  /* move timeline to the left */
   .journey-timeline::before,
   .journey-timeline::after {
     left: 9px;
     transform: none;
   }
 
-  /* All items become full width */
+  /* all items become full width */
   .journey-item,
   .journey-item:nth-child(even),
   .journey-item:nth-child(odd) {
@@ -1587,7 +1535,7 @@ img {
     transform: translateY(0);
   }
 
-  /* Mobile dots */
+  /* mobile dots */
   .journey-item:nth-child(odd) .journey-dot,
   .journey-item:nth-child(even) .journey-dot {
     left: 0;
@@ -1595,7 +1543,7 @@ img {
     right: auto;
   }
 
-  /* Mobile years */
+  /* mobile years */
   .journey-item:nth-child(odd) .journey-year,
   .journey-item:nth-child(even) .journey-year {
     position: static;
@@ -1614,9 +1562,7 @@ img {
   }
 }
 
-/* =========================================================
-   ABOUT HERO
-========================================================= */
+/* about hero */
 
 .about-hero {
   min-height: 100vh;
@@ -1636,7 +1582,7 @@ img {
   background-repeat: no-repeat;
 }
 
-/* Dark overlay */
+/* dark overlay */
 
 .about-hero-overlay {
   position: absolute;
@@ -1647,7 +1593,7 @@ img {
   z-index: 1;
 }
 
-/* Subtle blue glow */
+/* subtle blue glow */
 
 .about-hero::after {
   content: "";
@@ -1673,7 +1619,7 @@ img {
   z-index: 2;
 }
 
-/* Content */
+/* content */
 
 .about-hero-content {
   position: relative;
@@ -1692,7 +1638,7 @@ img {
   align-items: center;
 }
 
-/* Small label */
+/* small label */
 
 .about-hero-tag {
   display: inline-block;
@@ -1716,7 +1662,7 @@ img {
   letter-spacing: 2px;
 }
 
-/* Main heading */
+/* main heading */
 
 .about-hero-title {
   margin: 0;
@@ -1734,7 +1680,7 @@ img {
   letter-spacing: -2px;
 }
 
-/* Blue heading part */
+/* blue heading part */
 
 .about-hero-title span {
   display: block;
@@ -1744,7 +1690,7 @@ img {
   text-shadow: 0 0 25px rgba(13, 110, 253, 0.2);
 }
 
-/* Description */
+/* description */
 
 .about-hero-text {
   max-width: 700px;
@@ -1758,7 +1704,7 @@ img {
   line-height: 1.8;
 }
 
-/* Highlight items */
+/* highlight items */
 
 .about-hero-highlights {
   display: flex;
@@ -1802,9 +1748,7 @@ img {
   transform: translateY(-3px);
 }
 
-/* =========================================================
-   ABOUT HERO FLOATING ANIMATION
-========================================================= */
+/* about hero floating animation */
 
 .about-hero-content .hero-float {
   animation: aboutHeroFloat 4s ease-in-out infinite;
@@ -1870,11 +1814,9 @@ img {
   }
 }
 
-/* =========================================================
-   SERVICES PAGE
-   ========================================================= */
+/* services page */
 
-/* ================= HERO ================= */
+/* hero */
 
 .services-hero {
   min-height: 92vh;
@@ -1978,7 +1920,7 @@ img {
   transform: translateY(-3px);
 }
 
-/* ================= GLOWING DOTS ================= */
+/* glowing dots */
 
 .glow-dot {
   position: absolute;
@@ -2043,7 +1985,7 @@ img {
   }
 }
 
-/* ================= INTRO ================= */
+/* intro */
 
 .services-intro {
   padding: 110px 0;
@@ -2075,7 +2017,7 @@ img {
   line-height: 1.8;
 }
 
-/* ================= SERVICE CARDS ================= */
+/* service cards */
 
 .service-main-card {
   position: relative;
@@ -2189,7 +2131,7 @@ img {
   gap: 14px;
 }
 
-/* ================= DETAIL SECTIONS ================= */
+/* detail sections */
 
 .service-detail {
   padding: 120px 0;
@@ -2235,7 +2177,7 @@ img {
   max-width: 600px;
 }
 
-/* ================= SERVICE LIST ================= */
+/* service list */
 
 .service-list {
   margin-top: 30px;
@@ -2259,7 +2201,7 @@ img {
   font-size: 1.1rem;
 }
 
-/* ================= CERTIFICATION VISUAL ================= */
+/* certification visual */
 
 .service-visual {
   min-height: 430px;
@@ -2309,7 +2251,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* ================= SOLUTIONS ================= */
+/* solutions */
 
 .solution-grid {
   display: grid;
@@ -2359,7 +2301,7 @@ img {
   margin: 0;
 }
 
-/* ================= SOLUTION VISUAL ================= */
+/* solution visual */
 
 .solution-visual {
   min-height: 440px;
@@ -2430,7 +2372,7 @@ img {
   }
 }
 
-/* ================= INFRASTRUCTURE VISUAL ================= */
+/* infrastructure visual */
 
 .infrastructure-visual {
   height: 450px;
@@ -2566,7 +2508,7 @@ img {
   transform: rotate(25deg);
 }
 
-/* ================= WHY SERVICES ================= */
+/* why services */
 
 .why-services {
   padding: 110px 0;
@@ -2610,7 +2552,7 @@ img {
   line-height: 1.6;
 }
 
-/* ================= CTA ================= */
+/* cta */
 
 .services-cta {
   padding: 100px 0;
@@ -2682,7 +2624,7 @@ img {
   box-shadow: 0 10px 30px rgba(13, 110, 253, 0.3);
 }
 
-/* ================= RESPONSIVE ================= */
+/* responsive */
 
 @media (max-width: 991px) {
   .services-hero {
@@ -2743,11 +2685,9 @@ section[id] {
 html {
   scroll-behavior: smooth;
 }
-/* ========================================
-   CORPORATE PAGE
-   ======================================== */
+/* corporate page */
 
-/* ========== HERO ========== */
+/* hero */
 
 .corporate-hero {
   min-height: 85vh;
@@ -2845,7 +2785,7 @@ html {
   }
 }
 
-/* ========== INTRODUCTION ========== */
+/* introduction */
 
 .corporate-intro {
   padding: 110px 0;
@@ -2857,7 +2797,7 @@ html {
   max-width: 700px;
 }
 
-/* ========== CORPORATE STATS BOX ========== */
+/* corporate stats box */
 
 .corporate-stats-box {
   padding: 35px;
@@ -2907,7 +2847,7 @@ html {
   line-height: 1.6;
 }
 
-/* ========== CORPORATE SERVICES ========== */
+/* corporate services */
 
 .corporate-services {
   padding: 110px 0;
@@ -2992,7 +2932,7 @@ html {
   margin-left: 10px;
 }
 
-/* ========== CORPORATE TRAINING ========== */
+/* corporate training */
 
 .corporate-training {
   padding: 110px 0;
@@ -3000,7 +2940,7 @@ html {
   background: #090909;
 }
 
-/* ========== TRAINING VISUAL ========== */
+/* training visual */
 
 .training-visual {
   min-height: 450px;
@@ -3074,7 +3014,7 @@ html {
   line-height: 1.6;
 }
 
-/* ========== TRAINING DOTS ========== */
+/* training dots */
 
 .training-dot {
   width: 8px;
@@ -3110,7 +3050,7 @@ html {
   animation-delay: 1s;
 }
 
-/* ========== TRAINING LIST ========== */
+/* training list */
 
 .training-list {
   margin-top: 30px;
@@ -3136,7 +3076,7 @@ html {
   color: #cccccc;
 }
 
-/* ========== BUSINESS TECHNOLOGY ========== */
+/* business technology */
 
 .business-technology {
   padding: 110px 0;
@@ -3190,7 +3130,7 @@ html {
   margin: 0;
 }
 
-/* ========== WHY COMPUTER PRIDE ========== */
+/* why computer pride */
 
 .corporate-why {
   padding: 110px 0;
@@ -3238,7 +3178,7 @@ html {
   line-height: 1.6;
 }
 
-/* ========== CORPORATE QUOTE ========== */
+/* corporate quote */
 
 .corporate-quote {
   padding: 50px;
@@ -3287,7 +3227,7 @@ html {
   letter-spacing: 1px;
 }
 
-/* ========== FINAL CTA ========== */
+/* final cta */
 
 .corporate-cta {
   padding: 100px 0;
@@ -3327,7 +3267,7 @@ html {
   line-height: 1.7;
 }
 
-/* ========== ANIMATIONS ========== */
+/* animations */
 
 @keyframes corporateFloat {
   0%,
@@ -3364,7 +3304,7 @@ html {
   }
 }
 
-/* ========== MOBILE ========== */
+/* mobile */
 
 @media (max-width: 768px) {
   .corporate-hero {
@@ -3405,11 +3345,9 @@ html {
   }
 }
 
-/* ========================================
-   RESOURCES PAGE
-   ======================================== */
+/* resources page */
 
-/* ========== HERO ========== */
+/* hero */
 
 .resources-hero {
   min-height: 70vh;
@@ -3461,7 +3399,7 @@ html {
   flex-wrap: wrap;
 }
 
-/* ========== GALLERY ========== */
+/* gallery */
 
 .resources-gallery {
   padding: 100px 0;
@@ -3521,7 +3459,7 @@ html {
   margin: 0;
 }
 
-/* ========== ARTICLES ========== */
+/* articles */
 
 .resources-articles {
   padding: 100px 0;
@@ -3599,7 +3537,7 @@ html {
   margin-left: 12px;
 }
 
-/* ========== CTA ========== */
+/* cta */
 
 .resources-cta {
   padding: 100px 0;
@@ -3630,7 +3568,7 @@ html {
   line-height: 1.7;
 }
 
-/* ========== MOBILE ========== */
+/* mobile */
 
 @media (max-width: 768px) {
   .resources-hero {
@@ -3647,15 +3585,13 @@ html {
   }
 }
 
-/* ========================================
-   ARTICLES PAGE
-   ======================================== */
+/* articles page */
 
 .article-hero {
   min-height: 45vh;
 }
 
-/* ========== INDEX LINKS ========== */
+/* index links */
 
 .article-index {
   background: #080808;
@@ -3686,7 +3622,7 @@ html {
   background: rgba(13, 110, 253, 0.15);
 }
 
-/* ========== FULL ARTICLE ========== */
+/* full article */
 
 .article-full {
   padding: 90px 0;
@@ -3723,9 +3659,7 @@ html {
   margin-bottom: 20px;
 }
 
-/* ========================================
-   CONTACT PAGE
-   ======================================== */
+/* contact page */
 
 .page-title {
   padding: 150px 0 60px;
@@ -3752,7 +3686,7 @@ html {
   color: #b8b8b8;
 }
 
-/* ========== CONTACT CARD ========== */
+/* contact card */
 
 .contact-card {
   background: #0d0d0d;
@@ -3777,7 +3711,7 @@ html {
   background: #101010;
 }
 
-/* ========== FAQ ========== */
+/* faq */
 
 .contact-faq-section {
   background: #080808;
@@ -3826,7 +3760,7 @@ html {
   color: #0d6efd;
 }
 
-/* ========== SOCIAL ========== */
+/* social */
 
 .contact-social-section {
   background: #050505;
@@ -3864,7 +3798,7 @@ html {
   border-color: #0d6efd;
 }
 
-/* ========== MAP ========== */
+/* map */
 
 .map-section {
   background: #080808;
@@ -3896,7 +3830,7 @@ html {
   line-height: 1.7;
 }
 
-/* ========== MOBILE ========== */
+/* mobile */
 
 @media (max-width: 768px) {
   .page-title {
