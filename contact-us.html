@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us - Computer Pride</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="photo/logo computer pride.png"
+            class="navbar-logo"
+            alt="Computer Pride"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="courses.html">Courses</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="corporate.html">Corporate</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="resources.html">Resources</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="contact-us.html">Contact</a>
+            </li>
+
+            <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+              <button
+                class="btn btn-primary nav-cta"
+                data-bs-toggle="modal"
+                data-bs-target="#bookingModal"
+              >
+                Get Started
+                <i class="bi bi-arrow-right ms-1"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="page-title text-center">
+        <div class="container">
+          <span class="section-badge">GET IN TOUCH</span>
+          <h1>Contact Us</h1>
+          <p class="lead">
+            Have a question about our courses, services or corporate training?
+            We would love to hear from you.
+          </p>
+        </div>
+      </section>
+
+      <section class="container py-5">
+        <div
+          class="row justify-content-center g-0 contact-card shadow-lg rounded-4 overflow-hidden"
+        >
+          <!-- Contact info panel -->
+          <div class="col-lg-5 contact-info-panel p-5 text-white">
+            <h3 class="fw-bold mb-3">Let's talk</h3>
+            <p class="mb-4">
+              Have a question about our courses or IT solutions? Send us a
+              message and our team will get back to you shortly.
+            </p>
+
+            <div class="d-flex align-items-start mb-4">
+              <i class="bi bi-telephone-fill fs-5 me-3"></i>
+              <div>
+                <div class="fw-semibold">Call us</div>
+                <div class="small">(+254) 20 2221973</div>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-start mb-4">
+              <i class="bi bi-envelope-fill fs-5 me-3"></i>
+              <div>
+                <div class="fw-semibold">Email us</div>
+                <div class="small">info@computer-pride.co.ke</div>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-start mb-4">
+              <i class="bi bi-geo-alt-fill fs-5 me-3"></i>
+              <div>
+                <div class="fw-semibold">Visit us</div>
+                <div class="small">
+                  1st Floor, JKUAT Tower, Kenyatta Avenue, Nairobi
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-start">
+              <i class="bi bi-clock-fill fs-5 me-3"></i>
+              <div>
+                <div class="fw-semibold">Office hours</div>
+                <div class="small">
+                  Mon - Fri: 9:00am - 5:30pm<br />
+                  Sat: 9:00am - 1:00pm
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Form panel -->
+          <div class="col-lg-7 contact-form-panel p-5">
+            <form class="row g-3" action="add-contact-us.php" method="POST">
+              <div class="col-md-6">
+                <label class="form-label">First name</label>
+                <input
+                  class="form-control form-control-lg"
+                  type="text"
+                  name="firstname"
+                  placeholder="Jane"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Last name</label>
+                <input
+                  class="form-control form-control-lg"
+                  type="text"
+                  name="lastname"
+                  placeholder="Doe"
+                  required
+                />
+              </div>
+              <div class="col-12">
+                <label class="form-label">Email address</label>
+                <input
+                  class="form-control form-control-lg"
+                  type="email"
+                  name="email"
+                  placeholder="jane.doe@email.com"
+                  required
+                />
+              </div>
+              <div class="col-12">
+                <label class="form-label">Phone number</label>
+                <input
+                  class="form-control form-control-lg"
+                  type="tel"
+                  name="phone"
+                  placeholder="+254 7XX XXX XXX"
+                />
+              </div>
+              <div class="col-12">
+                <label class="form-label">Message</label>
+                <textarea
+                  class="form-control"
+                  rows="5"
+                  name="message"
+                  placeholder="Tell us how we can help..."
+                  required
+                ></textarea>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary btn-lg px-5" type="submit">
+                  <i class="bi bi-send-fill me-2"></i>Send message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Social Links -->
+    <section class="contact-social-section border-top border-secondary py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="about-badge">CONNECT WITH US</span>
+          <h2 class="about-title mt-3">Follow Computer Pride</h2>
+          <p class="about-lead mx-auto max-w-700">
+            Stay connected with our latest training programs, technology news
+            and student success stories.
+          </p>
+        </div>
+
+        <div class="social-card text-center">
+          <h4 class="text-white mb-4">Connect On Our Networks</h4>
+          <div class="contact-social-links">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="contact-faq-section border-top border-secondary py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="about-badge">COMMON QUESTIONS</span>
+          <h2 class="about-title mt-3">Frequently Asked Questions</h2>
+          <p class="about-lead mx-auto max-w-700">
+            Quick answers to the questions we get asked the most.
+          </p>
+        </div>
+
+        <div class="accordion contact-faq mx-auto" id="faqAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq1"
+              >
+                What are your training hours?
+              </button>
+            </h2>
+            <div
+              id="faq1"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Our regular training hours are Monday to Friday, 9:00am to
+                5:30pm, with select Saturday classes running from 9:00am to
+                1:00pm.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq2"
+              >
+                Do you offer payment plans?
+              </button>
+            </h2>
+            <div
+              id="faq2"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Yes, most of our courses can be paid in installments. Reach out
+                to us through this form or by phone and our team will go through
+                the options with you.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq3"
+              >
+                How do I book a training session?
+              </button>
+            </h2>
+            <div
+              id="faq3"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                You can use the "Get Started" button at the top of any page to
+                book a session directly, or send us a message using the form on
+                this page and we'll follow up with you.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq4"
+              >
+                Do you offer corporate training at our offices?
+              </button>
+            </h2>
+            <div
+              id="faq4"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Yes, we run on-site corporate training and can tailor a
+                programme for your team. Visit our
+                <a href="corporate.html">Corporate</a> page or contact us for
+                more details.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq5"
+              >
+                What's included in the course fees?
+              </button>
+            </h2>
+            <div
+              id="faq5"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Course fees generally cover training materials, hands-on lab
+                access and a certificate of completion. Vendor courses also
+                include the certification exam voucher.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq6"
+              >
+                Can I reschedule if I can't attend?
+              </button>
+            </h2>
+            <div
+              id="faq6"
+              class="accordion-collapse collapse"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Yes, you can reschedule to a future intake at no extra cost.
+                Just let us know as early as possible before your course start
+                date.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location -->
+    <section class="map-section border-top border-secondary py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <span class="about-badge">OUR LOCATION</span>
+          <h2 class="about-title mt-3">Visit Computer Pride</h2>
+          <p class="about-lead mx-auto max-w-700">
+            Find us at our Nairobi headquarters.
+          </p>
+        </div>
+
+        <div class="map-card text-center">
+          <i class="bi bi-geo-alt-fill map-icon"></i>
+          <h3>JKUAT Towers</h3>
+          <p>
+            1st Floor, JKUAT Tower<br />
+            Kenyatta Avenue<br />
+            Nairobi, Kenya
+          </p>
+          <a
+            href="https://maps.google.com"
+            target="_blank"
+            class="btn btn-primary mt-3"
+          >
+            Open Google Maps
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <img
+              src="photo/logo computer pride.png"
+              alt="Computer Pride"
+              class="footer-logo mb-3"
+            />
+            <p>
+              Computer Pride is one of Kenya's leading ICT training and
+              technology solution providers, empowering students and businesses
+              through practical digital skills.
+            </p>
+            <div class="social-icons mt-4">
+              <a
+                href="https://www.facebook.com/ComputerPrideKenya"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a
+                href="https://twitter.com/ComputerPrideKE"
+                target="_blank"
+                aria-label="Twitter"
+              >
+                <i class="bi bi-twitter-x"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/computerprideke/"
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a
+                href="https://ke.linkedin.com/company/computer-pride-limited"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/@computerprideke"
+                target="_blank"
+                aria-label="YouTube"
+              >
+                <i class="bi bi-youtube"></i>
+              </a>
+              <a
+                href="https://wa.me/254733793604?text=Hello%20Computer%20Pride%2C%20I%20found%20your%20website%20and%20I%20would%20like%20to%20know%20more%20about%20your%20ICT%20training%20and%20technology%20services."
+                target="_blank"
+                aria-label="WhatsApp"
+              >
+                <i class="bi bi-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5>Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about-us.html">About</a></li>
+              <li><a href="courses.html">Courses</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="corporate.html">Corporate</a></li>
+              <li><a href="resources.html">Resources</a></li>
+              <li><a href="contact-us.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5>Resources</h5>
+            <ul class="footer-links">
+              <li><a href="resources.html#gallery">Photo Gallery</a></li>
+              <li><a href="articles.html">Articles & Insights</a></li>
+              <li><a href="courses.html">Course Schedule</a></li>
+              <li><a href="corporate.html">Corporate Training</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5>Contact</h5>
+            <p><i class="bi bi-telephone me-2"></i> (+254) 20 2221973</p>
+            <p><i class="bi bi-envelope me-2"></i> info@computer-pride.co.ke</p>
+            <p>
+              <i class="bi bi-geo-alt me-2"></i>
+              <a
+                href="https://maps.google.com/?q=JKUAT+Towers+Kenyatta+Avenue+Nairobi"
+                target="_blank"
+                class="footer-map-link"
+              >
+                JKUAT Towers, Nairobi
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <hr />
+        <div class="text-center">
+          © 2026 Computer Pride. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+    <!-- BOOKING MODAL -->
+    <div
+      class="modal fade"
+      id="bookingModal"
+      tabindex="-1"
+      aria-labelledby="bookingModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-white border-secondary">
+          <form action="add-booking.php" method="POST">
+            <div class="modal-header border-secondary">
+              <h5 class="modal-title" id="bookingModalLabel">
+                Book a Training Session
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+
+            <div class="modal-body">
+              <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-control bg-dark text-white border-secondary"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control bg-dark text-white border-secondary"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Phone Number</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  class="form-control bg-dark text-white border-secondary"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Select Course</label>
+                <select
+                  name="course"
+                  class="form-select bg-dark text-white border-secondary"
+                  required
+                >
+                  <option value="" selected disabled>Choose a course...</option>
+                  <option value="Programming">Programming</option>
+                  <option value="Networking">Networking</option>
+                  <option value="Cyber Security">Cyber Security</option>
+                  <option value="Data Science">Data Science & AI</option>
+                  <option value="Cloud Computing">Cloud Computing</option>
+                </select>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label class="form-label">Preferred Date</label>
+                  <input
+                    type="date"
+                    name="preferred_date"
+                    class="form-control bg-dark text-white border-secondary"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label class="form-label">Preferred Time</label>
+                  <select
+                    name="preferred_time"
+                    class="form-select bg-dark text-white border-secondary"
+                    required
+                  >
+                    <option value="Morning">Morning</option>
+                    <option value="Afternoon">Afternoon</option>
+                    <option value="Evening">Evening</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-footer border-secondary">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="submit" class="btn btn-primary">
+                Confirm Booking
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

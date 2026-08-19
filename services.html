@@ -1,0 +1,729 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Services | Computer Pride</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="photo/logo computer pride.png"
+            class="navbar-logo"
+            alt="Computer Pride"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="courses.html">Courses</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" href="services.html"> Services </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="corporate.html">Corporate</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="resources.html">Resources</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact-us.html">Contact</a>
+            </li>
+
+            <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+              <button
+                class="btn btn-primary nav-cta"
+                data-bs-toggle="modal"
+                data-bs-target="#bookingModal"
+              >
+                Get Started
+                <i class="bi bi-arrow-right ms-1"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+      <section class="services-hero">
+        <div class="services-hero-overlay"></div>
+
+        <div class="services-hero-content">
+          <span class="services-small-title"> WHAT WE OFFER </span>
+
+          <h1>
+            Technology That
+            <span>Moves You Forward.</span>
+          </h1>
+
+          <p>
+            From professional certifications to enterprise technology and
+            infrastructure, we provide practical solutions designed to help
+            people and organisations grow in a digital world.
+          </p>
+
+          <a href="#services-overview" class="services-hero-btn">
+            Explore Our Services
+            <i class="bi bi-arrow-down"></i>
+          </a>
+        </div>
+
+        <!-- glowing dots -->
+        <span class="glow-dot dot-1"></span>
+        <span class="glow-dot dot-2"></span>
+        <span class="glow-dot dot-3"></span>
+        <span class="glow-dot dot-4"></span>
+        <span class="glow-dot dot-5"></span>
+      </section>
+
+      <!-- ================= INTRO ================= -->
+
+      <section class="services-intro" id="services-overview">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-label"> OUR SERVICES </span>
+
+            <h2>Complete Technology Solutions</h2>
+
+            <p>
+              We combine training, technology and infrastructure to provide
+              individuals and organisations with the tools they need to succeed.
+            </p>
+          </div>
+
+          <div class="row g-4 mt-4">
+            <!-- CERTIFICATIONS -->
+
+            <div class="col-lg-4 col-md-6">
+              <div class="service-main-card">
+                <div class="service-number">01</div>
+
+                <div class="service-icon">
+                  <i class="bi bi-award"></i>
+                </div>
+
+                <h3>Certifications</h3>
+
+                <p>
+                  Build your professional credibility through recognised
+                  technology certifications and secure examination services.
+                </p>
+
+                <a href="#certifications">
+                  Explore Certifications
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- SOLUTIONS -->
+
+            <div class="col-lg-4 col-md-6">
+              <div class="service-main-card">
+                <div class="service-number">02</div>
+
+                <div class="service-icon">
+                  <i class="bi bi-diagram-3"></i>
+                </div>
+
+                <h3>Business Solutions</h3>
+
+                <p>
+                  Modern digital solutions that help organisations streamline
+                  operations, improve productivity and make better decisions.
+                </p>
+
+                <a href="#solutions">
+                  Explore Solutions
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- INFRASTRUCTURE -->
+
+            <div class="col-lg-4 col-md-6 mx-md-auto">
+              <div class="service-main-card">
+                <div class="service-number">03</div>
+
+                <div class="service-icon">
+                  <i class="bi bi-hdd-network"></i>
+                </div>
+
+                <h3>IT Infrastructure</h3>
+
+                <p>
+                  Reliable hardware, networking and infrastructure services
+                  built around the needs of modern organisations.
+                </p>
+
+                <a href="#infrastructure">
+                  Explore Infrastructure
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CERTIFICATIONS ================= -->
+
+      <section class="service-detail certification-section" id="certifications">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <span class="section-label"> PROFESSIONAL DEVELOPMENT </span>
+
+              <h2>
+                Certifications That
+                <span>Build Confidence.</span>
+              </h2>
+
+              <p>
+                Give your career a stronger foundation with professional
+                certifications and examination services. Our approach connects
+                learners with globally recognised certification pathways.
+              </p>
+
+              <div class="service-list">
+                <div>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Professional certification preparation
+                </div>
+
+                <div>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Secure computer-based examinations
+                </div>
+
+                <div>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Technology and business certification pathways
+                </div>
+
+                <div>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Flexible examination support
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="service-visual certification-visual">
+                <div class="visual-content">
+                  <i class="bi bi-patch-check"></i>
+
+                  <h3>Professional Growth</h3>
+
+                  <p>Skills. Knowledge. Recognition.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SOLUTIONS ================= -->
+
+      <section class="service-detail solutions-section" id="solutions">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6 order-lg-2">
+              <span class="section-label"> BUSINESS TECHNOLOGY </span>
+
+              <h2>
+                Smarter Solutions
+                <span>For Modern Organisations.</span>
+              </h2>
+
+              <p>
+                Technology should make work easier. We help organisations
+                improve their operations through business applications, digital
+                systems and customised technology solutions.
+              </p>
+
+              <div class="solution-grid">
+                <div>
+                  <i class="bi bi-bar-chart"></i>
+                  <h4>Business Systems</h4>
+                  <p>Improve everyday business processes.</p>
+                </div>
+
+                <div>
+                  <i class="bi bi-cloud"></i>
+                  <h4>Cloud Services</h4>
+                  <p>Modernise applications and infrastructure.</p>
+                </div>
+
+                <div>
+                  <i class="bi bi-code-slash"></i>
+                  <h4>Custom Development</h4>
+                  <p>Technology designed around your needs.</p>
+                </div>
+
+                <div>
+                  <i class="bi bi-database"></i>
+                  <h4>Data & Reporting</h4>
+                  <p>Turn information into useful insights.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 order-lg-1">
+              <div class="solution-visual">
+                <div class="floating-screen screen-one">
+                  <i class="bi bi-graph-up-arrow"></i>
+                </div>
+
+                <div class="floating-screen screen-two">
+                  <i class="bi bi-cloud-check"></i>
+                </div>
+
+                <div class="floating-screen screen-three">
+                  <i class="bi bi-code-square"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= INFRASTRUCTURE ================= -->
+
+      <section
+        class="service-detail infrastructure-section"
+        id="infrastructure"
+      >
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <span class="section-label"> IT INFRASTRUCTURE </span>
+
+              <h2>
+                Infrastructure
+                <span>Built To Perform.</span>
+              </h2>
+
+              <p>
+                Strong digital services begin with reliable infrastructure. We
+                help organisations establish dependable technology environments
+                that support communication, productivity and business
+                continuity.
+              </p>
+
+              <div class="service-list">
+                <div>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Computer hardware and systems
+                </div>
+
+                <div>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Network design and installation
+                </div>
+
+                <div>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Server and storage solutions
+                </div>
+
+                <div>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Security and connectivity
+                </div>
+
+                <div>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Infrastructure support and maintenance
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="infrastructure-visual">
+                <div class="network-node node-center">
+                  <i class="bi bi-hdd-network"></i>
+                </div>
+
+                <div class="network-node node-one">
+                  <i class="bi bi-pc-display"></i>
+                </div>
+
+                <div class="network-node node-two">
+                  <i class="bi bi-router"></i>
+                </div>
+
+                <div class="network-node node-three">
+                  <i class="bi bi-cloud"></i>
+                </div>
+
+                <div class="network-node node-four">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+
+                <div class="network-line line-one"></div>
+                <div class="network-line line-two"></div>
+                <div class="network-line line-three"></div>
+                <div class="network-line line-four"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= WHY US ================= -->
+
+      <section class="why-services">
+        <div class="container">
+          <div class="section-heading">
+            <span class="section-label"> WHY COMPUTER PRIDE </span>
+
+            <h2>Technology With Purpose</h2>
+
+            <p>
+              We focus on practical solutions that create real value for
+              learners, professionals and organisations.
+            </p>
+          </div>
+
+          <div class="row g-4 mt-4">
+            <div class="col-md-3 col-6">
+              <div class="why-card">
+                <i class="bi bi-lightbulb"></i>
+
+                <h4>Practical</h4>
+
+                <p>Solutions designed for real-world needs.</p>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-6">
+              <div class="why-card">
+                <i class="bi bi-people"></i>
+
+                <h4>Experienced</h4>
+
+                <p>Knowledge built through years of ICT experience.</p>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-6">
+              <div class="why-card">
+                <i class="bi bi-shield-check"></i>
+
+                <h4>Reliable</h4>
+
+                <p>Technology you can depend on.</p>
+              </div>
+            </div>
+
+            <div class="col-md-3 col-6">
+              <div class="why-card">
+                <i class="bi bi-arrow-up-right-circle"></i>
+
+                <h4>Future Ready</h4>
+
+                <p>Preparing people and businesses for tomorrow.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CTA ================= -->
+
+      <section class="services-cta">
+        <div class="container">
+          <div class="services-cta-box">
+            <span class="section-label"> LET'S BUILD TOGETHER </span>
+
+            <h2>Ready To Take The Next Step?</h2>
+
+            <p>
+              Whether you want to advance your career, improve your organisation
+              or strengthen your technology infrastructure, we're ready to help.
+            </p>
+
+            <a href="contact-us.html" class="services-cta-btn">
+              Get In Touch
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <img
+              src="photo/logo computer pride.png"
+              alt="Computer Pride"
+              class="footer-logo mb-3"
+            />
+            <p>
+              Computer Pride is one of Kenya's leading ICT training and
+              technology solution providers, empowering students and businesses
+              through practical digital skills.
+            </p>
+            <div class="social-icons mt-4">
+              <a
+                href="https://www.facebook.com/ComputerPrideKenya"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a
+                href="https://twitter.com/ComputerPrideKE"
+                target="_blank"
+                aria-label="Twitter"
+              >
+                <i class="bi bi-twitter-x"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/computerprideke/"
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a
+                href="https://ke.linkedin.com/company/computer-pride-limited"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/@computerprideke"
+                target="_blank"
+                aria-label="YouTube"
+              >
+                <i class="bi bi-youtube"></i>
+              </a>
+              <a
+                href="https://wa.me/254733793604?text=Hello%20Computer%20Pride%2C%20I%20found%20your%20website%20and%20I%20would%20like%20to%20know%20more%20about%20your%20ICT%20training%20and%20technology%20services."
+                target="_blank"
+                aria-label="WhatsApp"
+              >
+                <i class="bi bi-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5>Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about-us.html">About</a></li>
+              <li><a href="courses.html">Courses</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="corporate.html">Corporate</a></li>
+              <li><a href="resources.html">Resources</a></li>
+              <li><a href="contact-us.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5>Resources</h5>
+            <ul class="footer-links">
+              <li><a href="resources.html#gallery">Photo Gallery</a></li>
+              <li><a href="articles.html">Articles & Insights</a></li>
+              <li><a href="courses.html">Course Schedule</a></li>
+              <li><a href="corporate.html">Corporate Training</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5>Contact</h5>
+            <p><i class="bi bi-telephone me-2"></i> (+254) 20 2221973</p>
+            <p><i class="bi bi-envelope me-2"></i> info@computer-pride.co.ke</p>
+            <p>
+              <i class="bi bi-geo-alt me-2"></i>
+              <a
+                href="https://maps.google.com/?q=JKUAT+Towers+Kenyatta+Avenue+Nairobi"
+                target="_blank"
+                class="footer-map-link"
+              >
+                JKUAT Towers, Nairobi
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <hr />
+        <div class="text-center">
+          © 2026 Computer Pride. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+    <!-- BOOKING MODAL -->
+    <div
+      class="modal fade"
+      id="bookingModal"
+      tabindex="-1"
+      aria-labelledby="bookingModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-white border-secondary">
+          <form action="add-booking.php" method="POST">
+            <div class="modal-header border-secondary">
+              <h5 class="modal-title" id="bookingModalLabel">
+                Book a Training Session
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+
+            <div class="modal-body">
+              <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-control bg-dark text-white border-secondary"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control bg-dark text-white border-secondary"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Phone Number</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  class="form-control bg-dark text-white border-secondary"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Select Course</label>
+                <select
+                  name="course"
+                  class="form-select bg-dark text-white border-secondary"
+                  required
+                >
+                  <option value="" selected disabled>Choose a course...</option>
+                  <option value="Programming">Programming</option>
+                  <option value="Networking">Networking</option>
+                  <option value="Cyber Security">Cyber Security</option>
+                  <option value="Data Science">Data Science & AI</option>
+                  <option value="Cloud Computing">Cloud Computing</option>
+                </select>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label class="form-label">Preferred Date</label>
+                  <input
+                    type="date"
+                    name="preferred_date"
+                    class="form-control bg-dark text-white border-secondary"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label class="form-label">Preferred Time</label>
+                  <select
+                    name="preferred_time"
+                    class="form-select bg-dark text-white border-secondary"
+                    required
+                  >
+                    <option value="Morning">Morning</option>
+                    <option value="Afternoon">Afternoon</option>
+                    <option value="Evening">Evening</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-footer border-secondary">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="submit" class="btn btn-primary">
+                Confirm Booking
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

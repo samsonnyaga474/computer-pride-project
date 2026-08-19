@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Courses - Computer Pride</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="photo/logo computer pride.png"
+            class="navbar-logo"
+            alt="Computer Pride"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="courses.html">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="corporate.html">Corporate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resources.html">Resources</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact-us.html">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+              <button
+                class="btn btn-primary nav-cta"
+                data-bs-toggle="modal"
+                data-bs-target="#bookingModal"
+              >
+                Get Started <i class="bi bi-arrow-right ms-1"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- ========== HERO ========== -->
+      <section class="page-hero">
+        <div class="container text-center">
+          <span class="section-badge mb-3">TRAINING PROGRAMMES</span>
+          <h1 class="page-hero-title">Short Courses</h1>
+          <p class="page-hero-text mx-auto">
+            Practical, job-focused ICT courses designed for beginners,
+            professionals and career changers. Build real skills with
+            industry-recognised training.
+          </p>
+
+          <div class="delivery-modes">
+            <span><i class="bi bi-camera-video"></i> Live Online</span>
+            <span><i class="bi bi-building"></i> In-Class</span>
+            <span><i class="bi bi-laptop"></i> e-Learning</span>
+            <span><i class="bi bi-geo-alt"></i> Onsite</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== WHY SHORT COURSES ========== -->
+      <section class="why-courses">
+        <div class="container">
+          <div class="row g-4 text-center">
+            <div class="col-md-3 col-6">
+              <div class="why-box">
+                <i class="bi bi-person-check"></i>
+                <h5>Beginner Friendly</h5>
+                <p>No prior experience needed</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="why-box">
+                <i class="bi bi-award"></i>
+                <h5>Industry Certifications</h5>
+                <p>Recognised credentials</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="why-box">
+                <i class="bi bi-clock"></i>
+                <h5>Flexible Duration</h5>
+                <p>1 – 4 month programmes</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="why-box">
+                <i class="bi bi-cash-coin"></i>
+                <h5>Affordable</h5>
+                <p>Quality training at fair prices</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== COURSE FILTERS ========== -->
+      <section class="courses-filter">
+        <div class="container">
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">
+              All Courses
+            </button>
+            <button class="filter-btn" data-filter="programming">
+              Programming
+            </button>
+            <button class="filter-btn" data-filter="networking">
+              Networking
+            </button>
+            <button class="filter-btn" data-filter="cyber">
+              Cyber Security
+            </button>
+            <button class="filter-btn" data-filter="data">Data & AI</button>
+            <button class="filter-btn" data-filter="cloud">Cloud</button>
+            <button class="filter-btn" data-filter="design">Design</button>
+            <button class="filter-btn" data-filter="digital">
+              Digital Skills
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Courses Grid -->
+      <section class="courses-grid-section">
+        <div class="container">
+          <div class="row g-4" id="coursesContainer">
+            <!-- Programming -->
+            <div
+              class="col-md-6 col-lg-4 course-item"
+              data-category="programming"
+              id="programming"
+            >
+              <div class="course-card">
+                <div class="course-badge">Beginner → Intermediate</div>
+                <h3>Programming & Web Development</h3>
+                <p>
+                  Learn HTML, CSS, JavaScript, Python and modern web
+                  development. Build real websites and applications from
+                  scratch.
+                </p>
+                <div class="course-meta">
+                  <span><i class="bi bi-clock"></i> 12 Weeks</span>
+                  <span class="course-price">KSh 18,000</span>
+                </div>
+                <button
+                  class="btn btn-primary w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#bookingModal"
+                >
+                  Book This Course
+                </button>
+              </div>
+            </div>
+
+            <!-- Networking -->
+            <div
+              class="col-md-6 col-lg-4 course-item"
+              data-category="networking"
+              id="networking"
+            >
+              <div class="course-card">
+                <div class="course-badge">Intermediate</div>
+                <h3>Networking (Cisco)</h3>
+                <p>
+                  Master routing, switching, IP addressing and enterprise
+                  networking using Cisco technologies and hands-on labs.
+                </p>
+                <div class="course-meta">
+                  <span><i class="bi bi-clock"></i> 12 Weeks</span>
+                  <span class="course-price">KSh 22,000</span>
+                </div>
+                <button
+                  class="btn btn-primary w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#bookingModal"
+                >
+                  Book This Course
+                </button>
+              </div>
+            </div>
+
+            <!-- Cyber Security -->
+            <div
+              class="col-md-6 col-lg-4 course-item"
+              data-category="cyber"
+              id="cyber"
+            >
+              <div class="course-card">
+                <div class="course-badge">Intermediate → Advanced</div>
+                <h3>Cyber Security & Ethical Hacking</h3>
+                <p>
+                  Learn threat analysis, ethical hacking, network defence and
+                  security best practices used in real organisations.
+                </p>
+                <div class="course-meta">
+                  <span><i class="bi bi-clock"></i> 12 Weeks</span>
+                  <span class="course-price">KSh 28,000</span>
+                </div>
+                <button
+                  class="btn btn-primary w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#bookingModal"
+                >
+                  Book This Course
+                </button>
+              </div>
+            </div>
+
+            <!-- Data Science -->
+            <div
+              class="col-md-6 col-lg-4 course-item"
+              data-category="data"
+              id="data"
+            >
+              <div class="course-card">
+                <div class="course-badge">Intermediate</div>
+                <h3>Data Science & Machine Learning</h3>
+                <p>
+                  Analyse data, build predictive models and work with Python,
+                  visualisation tools and modern AI techniques.
+                </p>
+                <div class="course-meta">
+                  <span><i class="bi bi-clock"></i> 14 Weeks</span>
+                  <span class="course-price">KSh 30,000</span>
+                </div>
+                <button
+                  class="btn btn-primary w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#bookingModal"
+                >
+                  Book This Course
+                </button>
+              </div>
+            </div>
+
+            <!-- Cloud Computing -->
+            <div
+              class="col-md-6 col-lg-4 course-item"
+              data-category="cloud"
+              id="cloud"
+            >
+              <div class="course-card">
+                <div class="course-badge">Intermediate</div>
+                <h3>Cloud Computing (AWS & Azure)</h3>
+                <p>
+                  Understand cloud models, deploy applications and gain
+                  practical experience with AWS and Microsoft Azure.
+                </p>
+                <div class="course-meta">
+                  <span><i class="bi bi-clock"></i> 12 Weeks</span>
+                  <span class="course-price">KSh 26,000</span>
+                </div>
+                <button
+                  class="btn btn-primary w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#bookingModal"
+                >
+                  Book This Course
+                </button>
+              </div>
+            </div>
+
+            <!-- Graphic Design -->
+            <div
+              class="col-md-6 col-lg-4 course-item"
+              data-category="design"
+              id="design"
+            >
+              <div class="course-card">
+                <div class="course-badge">Beginner → Intermediate</div>
+                <h3>Graphic Design</h3>
+                <p>
+                  Master Adobe tools and design principles to create
+                  professional logos, posters, brand materials and digital
+                  content.
+                </p>
+                <div class="course-meta">
+                  <span><i class="bi bi-clock"></i> 10 Weeks</span>
+                  <span class="course-price">KSh 16,000</span>
+                </div>
+                <button
+                  class="btn btn-primary w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#bookingModal"
+                >
+                  Book This Course
+                </button>
+              </div>
+            </div>
+
+            <!-- ICDL -->
+            <div
+              class="col-md-6 col-lg-4 course-item"
+              data-category="digital"
+              id="icdl"
+            >
+              <div class="course-card">
+                <div class="course-badge">Beginner</div>
+                <h3>ICDL – Digital Literacy</h3>
+                <p>
+                  Build essential computer and Microsoft Office skills required
+                  for the modern workplace.
+                </p>
+                <div class="course-meta">
+                  <span><i class="bi bi-clock"></i> 12 Weeks</span>
+                  <span class="course-price">KSh 35,000</span>
+                </div>
+                <button
+                  class="btn btn-primary w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#bookingModal"
+                >
+                  Book This Course
+                </button>
+              </div>
+            </div>
+
+            <!-- Advanced Excel -->
+            <div
+              class="col-md-6 col-lg-4 course-item"
+              data-category="data"
+              id="excel"
+            >
+              <div class="course-card">
+                <div class="course-badge">Intermediate → Advanced</div>
+                <h3>Advanced Excel & Data Analysis</h3>
+                <p>
+                  Master advanced formulas, Pivot Tables, Power Query and
+                  dashboards for professional data analysis.
+                </p>
+                <div class="course-meta">
+                  <span><i class="bi bi-clock"></i> 4 Weeks</span>
+                  <span class="course-price">KSh 18,000</span>
+                </div>
+                <button
+                  class="btn btn-primary w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#bookingModal"
+                >
+                  Book This Course
+                </button>
+              </div>
+            </div>
+
+            <!-- Digital Marketing -->
+            <div
+              class="col-md-6 col-lg-4 course-item"
+              data-category="digital"
+              id="marketing"
+            >
+              <div class="course-card">
+                <div class="course-badge">Beginner → Intermediate</div>
+                <h3>Digital Marketing</h3>
+                <p>
+                  Learn SEO, social media marketing, content strategy and
+                  analytics to grow brands online.
+                </p>
+                <div class="course-meta">
+                  <span><i class="bi bi-clock"></i> 6 Weeks</span>
+                  <span class="course-price">KSh 20,000</span>
+                </div>
+                <button
+                  class="btn btn-primary w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#bookingModal"
+                >
+                  Book This Course
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== CTA ========== -->
+      <section class="cta-section">
+        <div class="container">
+          <div class="cta-box text-center">
+            <span class="section-badge mb-3">READY TO START?</span>
+            <h2>Find the Right Course for Your Goals</h2>
+            <p>
+              Whether you are starting your IT journey or advancing your career,
+              our practical courses are designed to help you succeed.
+            </p>
+            <button
+              class="btn btn-primary btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#bookingModal"
+            >
+              Book a Course <i class="bi bi-arrow-right ms-2"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <img
+              src="photo/logo computer pride.png"
+              alt="Computer Pride"
+              class="footer-logo mb-3"
+            />
+            <p>
+              Computer Pride is one of Kenya's leading ICT training and
+              technology solution providers, empowering students and businesses
+              through practical digital skills.
+            </p>
+            <div class="social-icons mt-4">
+              <a
+                href="https://www.facebook.com/ComputerPrideKenya"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a
+                href="https://twitter.com/ComputerPrideKE"
+                target="_blank"
+                aria-label="Twitter"
+              >
+                <i class="bi bi-twitter-x"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/computerprideke/"
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a
+                href="https://ke.linkedin.com/company/computer-pride-limited"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/@computerprideke"
+                target="_blank"
+                aria-label="YouTube"
+              >
+                <i class="bi bi-youtube"></i>
+              </a>
+              <a
+                href="https://wa.me/254733793604?text=Hello%20Computer%20Pride%2C%20I%20found%20your%20website%20and%20I%20would%20like%20to%20know%20more%20about%20your%20ICT%20training%20and%20technology%20services."
+                target="_blank"
+                aria-label="WhatsApp"
+              >
+                <i class="bi bi-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5>Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about-us.html">About</a></li>
+              <li><a href="courses.html">Courses</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="corporate.html">Corporate</a></li>
+              <li><a href="resources.html">Resources</a></li>
+              <li><a href="contact-us.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5>Services</h5>
+            <ul class="footer-links">
+              <li><a href="services.html">Programming</a></li>
+              <li><a href="services.html">Networking</a></li>
+              <li><a href="services.html">Cyber Security</a></li>
+              <li><a href="corporate.html">Corporate Training</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5>Contact</h5>
+            <p><i class="bi bi-telephone me-2"></i> (+254) 20 2221973</p>
+            <p><i class="bi bi-envelope me-2"></i> info@computer-pride.co.ke</p>
+            <p>
+              <i class="bi bi-geo-alt me-2"></i>
+              <a
+                href="https://maps.google.com/?q=JKUAT+Towers+Kenyatta+Avenue+Nairobi"
+                target="_blank"
+                class="footer-map-link"
+              >
+                JKUAT Towers, Nairobi
+              </a>
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="text-center">
+          © 2026 Computer Pride. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+    <!-- ========== BOOKING MODAL ========== -->
+    <div
+      class="modal fade"
+      id="bookingModal"
+      tabindex="-1"
+      aria-labelledby="bookingModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-white border-secondary">
+          <form action="add-booking.php" method="POST">
+            <div class="modal-header border-secondary">
+              <h5 class="modal-title" id="bookingModalLabel">
+                Book a Training Session
+              </h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="modal"
+              ></button>
+            </div>
+
+            <div class="modal-body">
+              <div class="mb-3">
+                <label class="form-label">Full Name</label>
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-control bg-dark text-white border-secondary"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Email Address</label>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control bg-dark text-white border-secondary"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Phone Number</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  class="form-control bg-dark text-white border-secondary"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Select Course</label>
+                <select
+                  name="course"
+                  class="form-select bg-dark text-white border-secondary"
+                  required
+                >
+                  <option value="" selected disabled>Choose a course...</option>
+                  <option value="Programming">
+                    Programming & Web Development
+                  </option>
+                  <option value="Networking">Networking (Cisco)</option>
+                  <option value="Cyber Security">Cyber Security</option>
+                  <option value="Data Science">
+                    Data Science & Machine Learning
+                  </option>
+                  <option value="Cloud Computing">Cloud Computing</option>
+                  <option value="Graphic Design">Graphic Design</option>
+                  <option value="ICDL">ICDL – Digital Literacy</option>
+                  <option value="Advanced Excel">Advanced Excel</option>
+                  <option value="Digital Marketing">Digital Marketing</option>
+                </select>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label class="form-label">Preferred Date</label>
+                  <input
+                    type="date"
+                    name="preferred_date"
+                    class="form-control bg-dark text-white border-secondary"
+                    required
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label class="form-label">Preferred Time</label>
+                  <select
+                    name="preferred_time"
+                    class="form-select bg-dark text-white border-secondary"
+                    required
+                  >
+                    <option value="Morning">Morning</option>
+                    <option value="Afternoon">Afternoon</option>
+                    <option value="Evening">Evening</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="modal-footer border-secondary">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="submit" class="btn btn-primary">
+                Confirm Booking
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Simple course filter
+      document.querySelectorAll(".filter-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          document
+            .querySelectorAll(".filter-btn")
+            .forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+
+          const filter = btn.getAttribute("data-filter");
+          document.querySelectorAll(".course-item").forEach((item) => {
+            if (
+              filter === "all" ||
+              item.getAttribute("data-category") === filter
+            ) {
+              item.style.display = "block";
+            } else {
+              item.style.display = "none";
+            }
+          });
+        });
+      });
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
